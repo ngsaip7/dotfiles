@@ -1,0 +1,8 @@
+alias ws="cd /Users/ng/workspace"
+
+# git aliases
+alias gd="git diff"
+alias gp="git pull -r"
+alias gs="git status"
+alias gc="git checkout"
+alias gl="git log"
