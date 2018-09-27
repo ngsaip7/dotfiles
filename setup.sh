@@ -4,7 +4,7 @@ sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/mas
 
 # rename .zshrc from root directory
 # symblink .zshrc in dotfiles directory to root folder
-mv ~/.zshrc ~/.old_zshrc
+# mv ~/.zshrc ~/.old_zshrc
 sh -c "$(ln -sv ~/workspace/dotfiles/.zshrc ~)"
 
 # rename .vimrc from root directory
