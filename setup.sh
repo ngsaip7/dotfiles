@@ -10,3 +10,11 @@ sh -c "$(ln -sv ~/workspace/dotfiles/.zshrc ~)"
 # rename .vimrc from root directory
 # symlink .vimrc in dotfiles to root folder
 sh -c "$(ln -sv ~/workspace/dotfiles/.vimrc ~)"
+
+# symlink .zsh_profile in dotfiles to root folder
+sh -c "$(ln -sv ~/workspace/dotfiles/.zsh_profile ~)"
+
+# symlink .aliases in dotfiles to root folder
+sh -c "$(ln -sv ~/workspace/dotfiles/.aliases ~)"
+
+source ~/.zshrc
