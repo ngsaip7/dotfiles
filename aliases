@@ -1,4 +1,7 @@
+# navigation
 alias ws="cd /Users/ng/workspace"
+alias dotfiles="cd ~/workspace/dotfiles"
+alias rd="cd ~/workspace/bc/RevDirect"
 
 # git aliases
 alias gd="git diff"
