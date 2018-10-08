@@ -2,11 +2,34 @@
 "   Filename: vimrc                                                         "
 "                                                                            "
 " Sections:                                                                  "
+" 	00. Vundle Plugins
 "   01. General ................. General Vim behavior                       "
 "   04. Vim UI .................. User interface behavior                    "
 "   05. Text Formatting/Layout .. Text, tab, indentation related             "
 "   06. Custom Commands ......... Any custom command aliases                 "
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" 00. Vundle Plugins                                                                "
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+set nocompatible              " be iMproved, required
+filetype off                  " required
+
+" set the runtime path to include Vundle and initialize
+set rtp+=~/.vim/bundle/Vundle.vim
+call vundle#begin()
+
+" All plugins should be added here
+Plugin 'vim-ruby/vim-ruby'
+Plugin 'scrooloose/nerdtree'
+
+call vundle#end()            " required
+filetype plugin indent on    " required
+" Brief help
+" :PluginList       - lists configured plugins
+" :PluginInstall    - installs plugins; append `!` to update or just :PluginUpdate
+" :PluginSearch foo - searches for foo; append `!` to refresh local cache
+" :PluginClean      - confirms removal of unused plugins; append `!` to auto-approve removal
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " 01. General                                                                "
@@ -65,7 +88,7 @@ set splitright
 nmap <silent> <C-U> :tabp<CR>
 nmap <silent> <C-I> :tabn<CR>
 nmap <silent> <C-N> :tab sp<CR>
-nmap <silent> <C-C> :tabclose<CR>
+"nmap <silent> <C-C> :tabclose<CR>
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " 06. Custom Commands                                                        "
@@ -74,7 +97,7 @@ nmap <silent> <C-C> :tabclose<CR>
 map <C-n> :NERDTreeToggle<CR>
 
 " Show changes in the current buffer
-map <C-c> :w !diff % -<CR>
+" map <C-c> :w !diff % -<CR>
 
 
 " moving lines up and down
