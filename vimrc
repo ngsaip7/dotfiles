@@ -20,8 +20,14 @@ set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
 
 " All plugins should be added here
-Plugin 'vim-ruby/vim-ruby'
+Plugin 'bronson/vim-trailing-whitespace'
+Plugin 'ervandew/supertab'
+Plugin 'kien/ctrlp.vim'
 Plugin 'scrooloose/nerdtree'
+Plugin 'vim-ruby/vim-ruby'
+Plugin 'Chiel92/vim-autoformat'
+Plugin 'dart-lang/dart-vim-plugin'
+Plugin 'thosakwe/vim-flutter'
 
 call vundle#end()            " required
 filetype plugin indent on    " required
@@ -41,6 +47,7 @@ set noswapfile
 set colorcolumn=80
 set spell
 set wrap
+set tabstop=2
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " 02. Events                                                                 "
@@ -94,7 +101,13 @@ nmap <silent> <C-N> :tab sp<CR>
 " 06. Custom Commands                                                        "
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " NERDTree
-map <C-n> :NERDTreeToggle<CR>
+nmap <silent> <leader>t :NERDTreeToggle<CR>
+
+" Remove WhiteSpace
+nmap <silent> <leader>fw :FixWhitespace<CR>
+
+" escape from search
+nmap <silent> <leader>/ :nohlsearch<CR>
 
 " Show changes in the current buffer
 " map <C-c> :w !diff % -<CR>
