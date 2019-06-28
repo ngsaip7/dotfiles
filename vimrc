@@ -48,6 +48,7 @@ set colorcolumn=80
 set spell
 set wrap
 set tabstop=2
+set shiftwidth=2
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " 02. Events                                                                 "

@@ -2,3 +2,5 @@
 export PATH="$PATH:$HOME/.rvm/bin"
 export PATH="$PATH:$HOME/google-cloud-sdk/bin"
 export PATH="$PATH:$HOME/workspace/mobile/flutter/bin"
+#setting golang path
+export GOPATH="$HOME/workspace/golang"
