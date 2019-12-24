@@ -20,14 +20,14 @@ set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
 
 " All plugins should be added here
+Plugin 'Chiel92/vim-autoformat'
 Plugin 'bronson/vim-trailing-whitespace'
 Plugin 'ervandew/supertab'
 Plugin 'kien/ctrlp.vim'
 Plugin 'scrooloose/nerdtree'
+Plugin 'tpope/vim-rails'
 Plugin 'vim-ruby/vim-ruby'
-Plugin 'Chiel92/vim-autoformat'
-Plugin 'dart-lang/dart-vim-plugin'
-Plugin 'thosakwe/vim-flutter'
+Plugin 'zxqfl/tabnine-vim'
 
 call vundle#end()            " required
 filetype plugin indent on    " required
