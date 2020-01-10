@@ -25,6 +25,7 @@ Plugin 'bronson/vim-trailing-whitespace'
 Plugin 'ervandew/supertab'
 Plugin 'kien/ctrlp.vim'
 Plugin 'scrooloose/nerdtree'
+Plugin 'terryma/vim-multiple-cursors'
 Plugin 'tpope/vim-rails'
 Plugin 'vim-ruby/vim-ruby'
 Plugin 'zxqfl/tabnine-vim'
@@ -92,11 +93,11 @@ nnoremap <Leader>w <C-W><C-H>
 nnoremap <Leader>e <C-W><C-L>
 set splitright
 
-" Buffer commands
-nmap <silent> <C-U> :tabp<CR>
-nmap <silent> <C-I> :tabn<CR>
-nmap <silent> <C-N> :tab sp<CR>
-"nmap <silent> <C-C> :tabclose<CR>
+" Tab commands
+nmap <silent> th :tabp<CR>
+nmap <silent> tl :tabn<CR>
+nmap <silent> tn :tab sp<CR>
+nmap <silent> tc :tabclose<CR>
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " 06. Custom Commands                                                        "
